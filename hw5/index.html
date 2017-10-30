@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poams</title>
+    <script type="text/javascript">
+        var content1 = ["Watermelon", "Snow", "Penguins", "Acrobats", "Castle"]
+        var content2 = ["Juicy, sweet", "Lovely, white", "Black, white", "Flexible, amusing", "Strong, Beautiful"]
+        var content3 = ["Dripping, slurping, smacking", "Falling, dancing, drifting", "Waddling, swimming, eating", "Flipping, twirling, jumping", "Imposing, protecting, watching"]
+        var content4 = ["So messy to eat", "Covering everything it touches", "Playing in the water", "Make me laugh", "Symbolizes wealth and power"]
+        var content5 = ["Yummy", "Blanket", "Emperors", "Performers", "Fortress"]
+
+        function regularPoam(min, max) {
+            var rn = Math.round(Math.random() * (max - min) + min);
+            console.log(rn);
+            getText1(rn);
+            getText2(rn);
+            getText3(rn);
+            getText4(rn);
+            getText5(rn);
+        }
+
+        function randomPoam(min, max) {
+            var numList = []
+            for (var i = 0; i < 5; i++) {
+                var rnd = Math.round(Math.random() * (max - min) + min);
+                numList.push(rnd)
+            }
+            getText1(numList[0]);
+            getText2(numList[1]);
+            getText3(numList[2]);
+            getText4(numList[3]);
+            getText5(numList[4]);
+           
+        }
+
+
+        function getText1(num) {
+            document.getElementById("line1").innerHTML = content1[num];
+        }
+
+        function getText2(num) {
+            document.getElementById("line2").innerHTML = content2[num];
+        }
+
+        function getText3(num) {
+            document.getElementById("line3").innerHTML = content3[num];
+        }
+
+        function getText4(num) {
+            document.getElementById("line4").innerHTML = content4[num];
+        }
+
+        function getText5(num) {
+            document.getElementById("line5").innerHTML = content5[num];
+        }
+    </script>
+</head>
+
+<body>
+    <p id="line1"></p>
+    <p id="line2"></p>
+    <p id="line3"></p>
+    <p id="line4"></p>
+    <p id="line5"></p>
+    <p><button onclick="regularPoam(0, 4);">Create a Poam</button></p>
+<p><button onclick="randomPoam(0, 4);">Create a Random Poam</button></p>
+</body>
+
+</html>
