@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+        .navi {
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+            vertical-align: middle;
+        }
+     .navi:hover {
+            transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -moz-transform: scale(1.5);
+            /* Firefox */
+            -webkit-transform: scale(1.5);
+            /* Safari and Chrome */
+            -o-transform: scale(1.5);
+            /* Opera */
+        }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/water.jpg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/port.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">ASAF</span> YANIV</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  
+  <p>I'm an independent creative artist based in New York. With skills ranging from sound design, video editing to producing and composing music, you will not have to look for a product team as I can be your one-man creative studio that is sure to save your time and money but still delivers quality service.
+
+As a sound designer, I draw creativity and precision from years of multi-disciplined roles within the music industry. Within the last decade, I have worked with Israeli and international clients as a freelance composer and video editor; composing on commercials, music videos, dance performances and other media.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+    
+      <img src="images/gtr.jpg" class="w3-round w3-image  " alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>My time as a composer and member of Israeli dance troupe Mayumana solidified my production and performance experience— an asset which has given me the foundation to build my current career. Together with Mayumana I produced and recorded original scores,
+performed on stage where he held the roles of lead guitarist, drummer, bass, and beat boxer; as well as produced promotional videos for commercial use.</p>
+        
+    <h3>yanivasaf@gmail.com</h3>
+    </div>
+  </div>
+    </div>
+     <footer>
+         <div class="w3-container w3-center">
+  
+             <a href="index.html"><img class="navi" src="images/cube.gif"  class="w3-circle" ></a>
+ 
+
+         </div>
+    </footer>
+</body>
+</html>
